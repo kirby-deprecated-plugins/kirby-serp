@@ -60,6 +60,6 @@ This plugin is provided "as is" with no guarantee. Use it at your own risk and a
 
 It is discouraged to use this plugin in any project that promotes racism, sexism, homophobia, animal abuse, violence or any other form of hate speech.
 
-## Credits
+## Credits.
 
 - [Jens Törnell](https://github.com/jenstornell)
