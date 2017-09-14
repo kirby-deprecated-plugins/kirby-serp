@@ -16,9 +16,9 @@ There are plenty of [options](docs/options.md) you can use to fine tune the tool
 
 ### Snippets
 
-There is also a few snippets registered by this plugin. If you are not satisfied with how they work, you can override them by adding your own snippets with the same names in `site/snippets`.
+There is also [a few snippets](https://github.com/jenstornell/kirby-serp/tree/master/snippets) registered by this plugin. If you are not satisfied with how they work, you can override them by adding your own snippets with the same names in `site/snippets`.
 
-To know which snippets you can override, look in `snippets` the plugin folder. Be aware that they are prefixed by `serp-` as default.
+Be aware that they are prefixed by `serp-` by default.
 
 ## Usage
 

@@ -21,13 +21,6 @@ The plugin is active by default, but if you want to deactivate it you can by set
 
 By default all pages on your site will be used in Kirby Serp and sorted alphabetically. You can set your own collection if you want.
 
-### filter.collection
-
-In case you need to filter the title and the description, you can do that with filters.
-
-- Use `print_r($args['defaults'])` to see which default values you can change.
-- You also have access to `$args['page']`, which is the page object in the loop.
-
 ### limit
 
 On each page, 10 items is listed by default. You can change this if you want.
@@ -42,7 +35,7 @@ The prefix is used for the snippet names. If you already use `serp` as prefix fo
 
 ### url
 
-By default this tool will operate at `https://example.com/serp` but you can change it if you need to.
+By default this tool will run at `YOUR_DOMAIN/serp` but you can change it if you need to.
 
 ## Filter options
 
