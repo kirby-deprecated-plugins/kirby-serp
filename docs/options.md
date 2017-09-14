@@ -6,9 +6,7 @@ The following options can be set in your `/site/config/config.php` file:
 
 ```php
 c::set('plugin.serp.active', true);
-c::set('plugin.serp.collection',
-    site()->index()->visible()->flip()->sortBy('id', 'asc')
-);
+c::set('plugin.serp.collection', site()->index()->visible()->flip()->sortBy('id', 'asc'));
 c::set('plugin.serp.limit', 10);
 c::set('plugin.serp.panel', 'panel');
 c::set('plugin.serp.prefix', 'serp');
@@ -48,14 +46,7 @@ By default this tool will operate at `https://example.com/serp` but you can chan
 
 ## Filter options
 
-All the filter options work in a similar way. You set it up like this:
-
-```php
-c::set('plugin.serp.YOUR_OPTION_KEY', function($args) {
-    $args['defaults'] = 'An array, a string or an integer';
-    return $args['defaults'];
-});
-```
+All the filter options work in a similar way.
 
 ### filter.collection
 
