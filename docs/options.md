@@ -30,13 +30,6 @@ In case you need to filter the title and the description, you can do that with f
 - Use `print_r($args['defaults'])` to see which default values you can change.
 - You also have access to `$args['page']`, which is the page object in the loop.
 
-'title' => callback('filter.title', title($item), $item),
-            'description' => callback('filter.description', description($item), $item),
-            'url' => callback('filter.url', $item->url(), $item),
-            'uri' => callback('filter.uri', $item->url(), $item),
-            'panel' => callback('filter.panel', panel_url($item), $item),
-            'flag' => flag($item)
-
 ### limit
 
 On each page, 10 items is listed by default. You can change this if you want.
