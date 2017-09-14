@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin:0;
+}
+
+.hero {
+    background: green;
+    background: #fafafa;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    h1 {
+        font-family: Arial;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+        a {
+           color: #007bff;
+           text-decoration: none;
+           
+           &:hover {
+               text-decoration: underline;
+           }
+        }
+    }
+
+    .info {
+        font-family: Arial;
+        color: #333;
+        font-size: 16px;
+
+        .soft {
+            opacity: .5;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+
+    a,
+    span {
+        color: #1a0dab;
+        text-decoration: none;
+        font-family: Arial;
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #ebebeb;
+        display: block;
+        margin: 5px;
+        background: #fafafa;
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 24px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    span {
+        color: #333;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 52px 0;
+    font-size: 12px;
+    font-family: arial;
+    color: #999;
+
+    a {
+        color: #999;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
