@@ -54,7 +54,7 @@ Filter the array of a single collection item.
 
 ```php
 c::set('plugin.serp.filter.collection', function($args) {
-    return $args['defaults']; // Array
+    return $args['data']; // Array
 });
 ```
 
@@ -64,7 +64,7 @@ The seo title of a single page.
 
 ```php
 c::set('plugin.serp.filter.title', function($args) {
-    return $args['defaults']; // String
+    return $args['data']; // String
 });
 ```
 
@@ -74,7 +74,7 @@ The seo meta description of a single page.
 
 ```php
 c::set('plugin.serp.filter.description', function($args) {
-    return $args['defaults']; // String
+    return $args['data']; // String
 });
 ```
 
@@ -84,7 +84,7 @@ The url of the page. This filter is especially useful for routed urls.
 
 ```php
 c::set('plugin.serp.filter.url', function($args) {
-    return $args['defaults']; // String
+    return $args['data']; // String
 });
 ```
 
@@ -94,7 +94,7 @@ The visible version of the url.
 
 ```php
 c::set('plugin.serp.filter.uri', function($args) {
-    return $args['defaults']; // String
+    return $args['data']; // String
 });
 ```
 
@@ -104,7 +104,7 @@ The full panel url.
 
 ```php
 c::set('plugin.serp.filter.panel', function($args) {
-    return $args['defaults']; // String
+    return $args['data']; // String
 });
 ```
 
@@ -118,7 +118,7 @@ It's different kind of statuses like `success`, `warning` and `danger`.
 
 ```php
 c::set('plugin.serp.filter.flag', function($args) {
-    return $args['defaults']; // String
+    return $args['data']; // String
 });
 ```
 

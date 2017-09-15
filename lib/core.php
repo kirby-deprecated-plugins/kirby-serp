@@ -36,7 +36,7 @@ class Archive {
         if(is_callable($filter)) {
             $callback = call($filter, [
                 'args' => [
-                    'defaults' => $defaults,
+                    'data' => $defaults,
                     'page' => $item
                 ]
             ]);
