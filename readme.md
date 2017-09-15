@@ -1,6 +1,8 @@
 # Kirby Serp
 
-*Version 0.1*
+[![Version 0.1](https://img.shields.io/badge/version-0.1-blue.svg)](docs/changelog.md) [![Commercial license](https://img.shields.io/badge/license-commercial-red.svg)](docs/license.md) [![Commercial license](https://img.shields.io/badge/price-€50-yellow.svg)](docs/license.md)
+
+***Note:*** *This is a commercial plugin. Read more about [how to purchase](#purchase).*
 
 SEO tool to quickly find missing title tags and meta descriptions on your site.
 
@@ -8,57 +10,31 @@ SEO tool to quickly find missing title tags and meta descriptions on your site.
 
 [**Installation instructions**](docs/install.md)
 
-## Setup
+## Table of contents
 
-### Options
-
-There are plenty of [options](docs/options.md) you can use to fine tune the tool.
-
-### Snippets
-
-There is also [a few snippets](https://github.com/jenstornell/kirby-serp/tree/master/snippets) registered by this plugin. If you are not satisfied with how they work, you can override them by adding your own snippets with the same names in `site/snippets`.
-
-Be aware that they are prefixed by `serp-` by default.
-
-## Usage
-
-1. Login to the panel, don't forget this step.
-1. Go to `yourdomain/serp` and you will see all your pages.
-1. Go to `yourdomain/serp/warnings` and you will see pages with missing titles or descriptions.
-
-Hover and click on the edit button to edit the page or navigate with the pagination.
-
-## No flag
-
-If you have no warning flag it means that both the seo title tag and the seo description has content. It does not measure quality in any way.
-
-### Yellow flag
-
-The yellow warning shows that you have a missing description, but have a seo title. It's not the end of the world, because Google will often generate an own description if it's missing.
-
-### Red flag
-
-The red warning shows that you have a missing title. It's important to fix because Google see it as a very important ranking factor.
-
-## Changelog
-
-**0.1**
-
-- Initial release
+1. **Get started**
+   1. [Install](docs/install.md)
+   1. [Usage](docs/usage.md)
+   1. [Options](docs/options.md)
+1. **Advanced**
+   - [Snippets](docs/snippets.md)
+1. **Misc**
+   - [Changelog](docs/changelog.md)
 
 ## Requirements
 
+- PHP 7
 - [**Kirby**](https://getkirby.com/) 2.5.5+
 
 ## Disclaimer
 
 This plugin is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment. If you find any issues, please [create a new issue](https://github.com/username/plugin-name/issues/new).
 
-## License
+## Purchase
 
-[MIT](https://opensource.org/licenses/MIT)
+Be sure to try before you buy. Refunds are not supported. Read more in the [license agreement](docs/license.md).
 
-It is discouraged to use this plugin in any project that promotes racism, sexism, homophobia, animal abuse, violence or any other form of hate speech.
+[![Pay now](https://www.paypalobjects.com/en_US/SE/i/btn/btn_paynowCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5SC69MKFPPUPE)
 
 ## Credits
 

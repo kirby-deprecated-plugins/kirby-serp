@@ -6,6 +6,6 @@
 
   <title>Kirby Serp</title>
 
-  <?= css('/assets/plugins/kirby-serp-viewer/css/style.min.css'); ?>
+  <?= css('/assets/plugins/kirby-serp/css/style.min.css'); ?>
 </head>
 <body>
