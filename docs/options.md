@@ -41,6 +41,18 @@ By default this tool will run at `YOUR_DOMAIN/serp` but you can change it if you
 
 All the filter options work in a similar way.
 
+**Default values**
+
+```php
+c::set('plugin.serp.filter.collection',  function($args){ return $data['args']; }); // Array
+c::set('plugin.serp.filter.title',       function($args){ return $data['args']; }); // String
+c::set('plugin.serp.filter.description', function($args){ return $data['args']; }); // String
+c::set('plugin.serp.filter.url',         function($args){ return $data['args']; }); // String
+c::set('plugin.serp.filter.uri',         function($args){ return $data['args']; }); // String
+c::set('plugin.serp.filter.panel',       function($args){ return $data['args']; }); // String
+c::set('plugin.serp.filter.flag',        function($args){ return $data['args']; }); // String
+```
+
 ### filter.collection
 
 Filter the array of a single collection item.
