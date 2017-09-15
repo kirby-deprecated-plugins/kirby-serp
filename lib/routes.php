@@ -4,6 +4,7 @@ if(site()->user() && c::get('plugin.serp.active', true) ) {
     array(
       'pattern' => [c::get('plugin.serp.url', 'serp'), c::get('plugin.serp.url', 'serp') . '/(:any)'],
       'action'  => function($uid = null) {
+        require_once __DIR__ . DS . 'core.php';
         require_once __DIR__ . DS . 'registry.php';
 
         $filter = (isset($uid)) ? $uid : 'none';

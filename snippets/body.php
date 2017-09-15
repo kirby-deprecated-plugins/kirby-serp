@@ -1,5 +1,6 @@
 <?php
 $collection = c::get('plugin.serp.collection', site()->index()->visible()->flip()->sortBy('id', 'asc'));
+
 if(isset($filter) && $filter == 'warnings') {
     $collection = $collection->filter(function($item) {
         if($item->seo_description()->isEmpty() || $item->seo_title()->isEmpty()) {

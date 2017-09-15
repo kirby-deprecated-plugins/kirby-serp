@@ -1,0 +1,8 @@
+{
+  "name": "kirby-serp",
+  "description": "Kirby Serp for Kirby CMS.",
+  "author": "Jens Törnell <jens.tornell@gmail.com>",
+  "version": "0.1",
+  "type": "kirby-plugin",
+  "license": "Commercial"
+}  
