@@ -8,8 +8,6 @@ SEO tool to quickly find missing title tags and meta descriptions on your site.
 
 ![Screenshot](docs/screenshot.png)
 
-[**Installation instructions**](docs/install.md)
-
 ## Table of contents
 
 1. **Get started**
