@@ -6,7 +6,8 @@ The following options can be set in your `/site/config/config.php` file:
 
 ```php
 c::set('plugin.serp.active', true);
-c::set('plugin.serp.collection', site()->index()->visible()->flip()->sortBy('id', 'asc'));
+c::set('plugin.serp.fallback.title', $title_missing);
+c::set('plugin.serp.fallback.description', $description_missing);
 c::set('plugin.serp.limit', 10);
 c::set('plugin.serp.panel', 'panel');
 c::set('plugin.serp.prefix', 'serp');
@@ -20,6 +21,18 @@ The plugin is active by default, but if you want to deactivate it you can by set
 ### collection
 
 By default all pages on your site will be used in Kirby Serp and sorted alphabetically. You can set your own collection if you want.
+
+### fallback.title
+
+If the title is missing this it will be set by default.
+
+>No title tag found! A title tag should be below 600px wide.
+
+### fallback.description
+
+If the description is missing this it will be set by default.
+
+>No meta description found! A meta description tag should be around 155 characters. Search engines choose if they want to use it or not.
 
 ### limit
 
@@ -51,6 +64,7 @@ c::set('plugin.serp.filter.url',         function($args){ return $data['args']; 
 c::set('plugin.serp.filter.uri',         function($args){ return $data['args']; }); // String
 c::set('plugin.serp.filter.panel',       function($args){ return $data['args']; }); // String
 c::set('plugin.serp.filter.flag',        function($args){ return $data['args']; }); // String
+c::set('plugin.serp.filter.query',       function($args){ return $data['args']; }); // Collection
 ```
 
 ### filter.collection
@@ -72,7 +86,7 @@ c::set('plugin.serp.filter.collection', function($args) {
 
 ### filter.title
 
-The seo title of a single page.
+The seo title of a single page. By default `$page->seo_title()` is used.
 
 ```php
 c::set('plugin.serp.filter.title', function($args) {
@@ -82,7 +96,7 @@ c::set('plugin.serp.filter.title', function($args) {
 
 ### filter.description
 
-The seo meta description of a single page.
+The seo meta description of a single page. By default `$page->seo_description()` is used.
 
 ```php
 c::set('plugin.serp.filter.description', function($args) {
@@ -131,6 +145,22 @@ It's different kind of statuses like `success`, `warning` and `danger`.
 ```php
 c::set('plugin.serp.filter.flag', function($args) {
     return $args['data']; // String
+});
+```
+
+### filter.query
+
+The query to get the pages by. By default this query is used:
+
+```php
+site()->index()->visible()->flip()->sortBy('id', 'asc');
+```
+
+The option looks like this:
+
+```php
+c::set('plugin.serp.filter.query', function($args) {
+    return $args['data']; // Collection
 });
 ```
 

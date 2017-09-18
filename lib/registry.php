@@ -1,6 +1,7 @@
 <?php
 $path = __DIR__ . '/../snippets/';
 
+kirby()->set('snippet', 'serp-meta', $path . 'meta.php');
 kirby()->set('snippet', 'serp-header', $path . 'header.php');
 kirby()->set('snippet', 'serp-hero', $path . 'hero.php');
 kirby()->set('snippet', 'serp-body', $path . 'body.php');

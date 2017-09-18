@@ -3,12 +3,20 @@ namespace KirbySerp;
 use c;
 
 class Archive {
-    public $title_fallback = 'No title tag found! A title tag should be below 600px wide.';
-    public $description_fallback = 'No meta description found! A meta description tag should be around 155 characters. Search engines choose if they want to use it or not.';
+    function __construct() {
+        $this->title_fallback = c::get(
+            'plugin.serp.fallback.title',
+            'No title tag found! A title tag should be below 600px wide.'
+        );
+        $this->description_fallback = c::get(
+            'plugin.serp.fallback.description',
+            'No meta description found! A meta description tag should be around 155 characters. Search engines choose if they want to use it or not.'
+        );
+    }
 
     function flag($title, $description) {
-        if($title == '' || $title == $this->title_fallback) return 'danger';
-        if($description == '' || $description == $this->description_fallback) return 'warning';
+        if($title == '' || $title == $this->title_fallback) return 'major';
+        if($description == '' || $description == $this->description_fallback) return 'minor';
         return 'sucess';
     }
 
@@ -30,7 +38,7 @@ class Archive {
         return u( c::get('plugin.serp.panel', 'panel') . '/pages/' . $item->id() . '/edit');
     }
 
-    function callback($option, $defaults, $item) {
+    function callback($option, $defaults, $item = null) {
         $filter = c::get('plugin.serp.' . $option);
         
         if(is_callable($filter)) {

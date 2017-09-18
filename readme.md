@@ -1,6 +1,6 @@
 # Kirby Serp
 
-[![Version 0.1](https://img.shields.io/badge/version-0.1-blue.svg)](docs/changelog.md) [![Commercial license](https://img.shields.io/badge/license-commercial-red.svg)](docs/license.md) [![Commercial license](https://img.shields.io/badge/price-€50-yellow.svg)](docs/license.md)
+[![Version 0.2](https://img.shields.io/badge/version-0.2-blue.svg)](docs/changelog.md) [![Commercial license](https://img.shields.io/badge/license-commercial-red.svg)](docs/license.md) [![Commercial license](https://img.shields.io/badge/price-€50-yellow.svg)](docs/license.md)
 
 ***Note:*** *This is a commercial plugin. Read more about [how to purchase](#purchase).*
 

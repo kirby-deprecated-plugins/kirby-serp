@@ -1,15 +1,18 @@
-<div class="item">
-    <div class="flag flag-<?= $flag; ?>"></div>
-    <div class="serp">
-        <a class="title" href="<?= $url; ?>">           
-            <?= $title; ?>
-        </a>
-        <div class="uri">
-            <?= $uri; ?>
-        </div>
-        <div class="description">
-            <?= $description; ?>
+<div class="item" data-url="<?= $url; ?>" data-panel="<?= $panel; ?>">
+    <div class="preview">
+        <div class="flag flag-<?= $flag; ?>"></div>
+        <div class="serp">
+            <div class="title">
+                <?= $title; ?>
+            </div>
+            <div class="uri">
+                <?= $uri; ?>
+            </div>
+            <div class="description">
+                <?= $description; ?>
+            </div>
         </div>
     </div>
-    <a href="<?= $panel; ?>" class="edit"></a>
+
+    <div class="meta-wrap"></div>
 </div>
